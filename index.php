@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <main>
         <div class="contenedor_todo">
@@ -32,19 +34,19 @@
 
             <div class="contenedor_login-register">
                 <!--Login-->
-                <form action="" class="formulario_login">
+                <form action="php/loginUsuario_be.php" method="POST" class="formulario_login">
                     <h2>Iniciar Sesion</h2>
-                    <input type="email" placeholder="Corre Electronico">
-                    <input type="password" placeholder="Contrseña">
+                    <input type="email" placeholder="Corre Electronico" name="correo">
+                    <input type="password" placeholder="Contrseña" name="clave">
                     <button>Iniciar Sesion</button>
                 </form>
                 <!--Registro-->
-                <form action="" class="formulario_register">
+                <form action="php/registroUsuario_be.php" method="POST" class="formulario_register">
                     <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="email" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Nombre Completo" name="nombre_completo">
+                    <input type="email" placeholder="Correo Electronico" name="correo">
+                    <input type="text" placeholder="Usuario" name="usuario">
+                    <input type="password" placeholder="Contraseña" name="clave">
                     <button>Registrarse</button>
                 </form>
             </div>
@@ -52,4 +54,5 @@
     </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

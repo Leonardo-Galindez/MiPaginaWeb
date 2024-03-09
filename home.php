@@ -31,6 +31,9 @@
                 <li class="nav-menu-item">
                     <a href="#" class="nav-menu-link nav-link">Contacto</a>
                 </li>
+                <li class="nav-menu-item-out">
+                    <a href="php/logOutUsuario_be.php" class="nav-menu-link-out">Cerrar Sesión</a>
+                </li>
             </ul>
         </nav>
     </header>

@@ -42,13 +42,37 @@
     margin-right: 40px;
     list-style: none;
   }
-  
+
   .nav-menu-item {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
+  }
+
+  .nav .nav-menu-item-out{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+
+  .nav .nav-menu-item-out .nav-menu-link-out{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+
+  .nav .nav-menu-item-out .nav-menu-link-out:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(218, 99, 99);
+    padding: 8px 12px;
+    border-radius: 3px;
   }
   
   .nav-menu-link {
