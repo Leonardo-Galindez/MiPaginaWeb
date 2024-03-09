@@ -1,17 +1,16 @@
-
 <?php
-    session_start();
-    if(!isset($_SESSION['usuario'])){
-        echo'
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    echo '
             <script>
                 alert("Debe iniciar sesión");
                 window.location ="index.php"
             </script> 
         ';
-        //header("location:index.php");
-        session_destroy();
-        die();
-    }
+    //header("location:index.php");
+    session_destroy();
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -24,13 +23,13 @@
     <title>Computex</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="stylesheet" href="assets/css/home.css" />
-   
+
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#" class="logo nav-link">Computex</a>
+            <a href="#" class="logo nav-link"><img src="assets/images/logo6.png" alt=""></a>
             <button class="nav-toggle" aria-label="Abrir menú">
                 <img src="assets/images/bars2.png" alt="">
             </button>
@@ -52,7 +51,13 @@
                 </li>
             </ul>
         </nav>
+
     </header>
+
+
+
+
+
     <script src="assets/js/home.js"></script>
 </body>
 

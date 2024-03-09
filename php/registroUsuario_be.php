@@ -10,7 +10,7 @@ $clave = $_POST['clave'];
 $clave = hash('sha512',$clave);//Incriptar
 
 $queryRegistro = "INSERT INTO usuario(nombreCompleto, correoElectronico, usuario, clave) 
-                            VALUES('$nombre_completo','$correo','$usuario','$clave')";
+VALUES('$nombre_completo','$correo','$usuario','$clave')";
 /*Verificar Datos*/
 
 $verificarCorreo = mysqli_query($conexion, "SELECT * FROM usuario WHERE correoElectronico ='$correo'");
