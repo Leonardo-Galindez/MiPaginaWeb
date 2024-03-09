@@ -9,7 +9,7 @@
   }
   
   .header {
-    background-color: #0769e9;
+    background-color: #46a2fd;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -56,9 +56,8 @@
     border-radius: 3px;
   }
   
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
-    background-color: #034574;
+  .nav-menu-link:hover{
+    background-color:  rgba(0, 128, 255, 0.5);
     transition: 0.5s;
   }
   
@@ -68,10 +67,9 @@
     background: none;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
+    padding: 5px 20px;
     line-height: 60px;
     cursor: pointer;
-  
     display: none;
   }
   
@@ -112,8 +110,7 @@
       line-height: 70px;
     }
   
-    .nav-menu-link:hover,
-    .nav-menu-link_active {
+    .nav-menu-link:hover{
       background: none;
       color: #83c5f7;
     }
