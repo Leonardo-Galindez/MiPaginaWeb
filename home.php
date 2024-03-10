@@ -29,14 +29,13 @@ if (!isset($_SESSION['usuario'])) {
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link"><img src="assets/images/logo6.png" alt=""></a>
-            <button class="nav-toggle" aria-label="Abrir menú">
+            <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
                 <img src="assets/images/bars2.png" alt="">
             </button>
             <ul class="nav-menu">

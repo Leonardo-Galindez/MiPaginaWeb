@@ -105,7 +105,6 @@ body .header .nav a img {
   display: none;
 }
 
-
 /* MOBILE */
 @media (max-width: 1200px) {
   body {
@@ -138,13 +137,11 @@ body .header .nav a img {
     margin: 0;
     background-color: #2c3e50;
     position: fixed;
-    top: 80px;
+    top: 60px;
     width: 100%;
     padding: 20px 0;
-
     height: calc(100% - 60px);
     overflow-y: auto;
-
     left: 100%;
     transition: left 0.3s;
   }
