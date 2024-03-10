@@ -22,7 +22,7 @@ if (!isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computex</title>
     <link rel="icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="http://computex.com/assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,31 +59,51 @@ if (!isset($_SESSION['usuario'])) {
         </nav>
     </header>
 
-    <main>
-        <div class="contenedor_galeria">
-            <div class="slider">
-                <input type="radio" name="slider" id="slideOne" checked>
-                <input type="radio" name="slider" id="slideTwo" checked>
-                <input type="radio" name="slider" id="slideThree" checked>
+    <section class="section-slider">
 
-                <div class="buttons">
-                    <label for="slideOne"></label>
-                    <label for="slideTwo"></label>
-                    <label for="slideThree"></label>
+        <div class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2" checked>
+                <input type="radio" name="radio-btn" id="radio3" checked>
+
+                <div class="slide firts">
+                    <img src="assets/images/bg1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bg2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bg3.jpg" alt="">
                 </div>
 
-                <div class="content">
-                    <div class="firtslide"></div>
-                    <div class="secondslide"></div>
-                    <div class="thirdslide"></div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 3){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
 
     <script src="assets/js/home.js"></script>
 </body>
-
 </html>
