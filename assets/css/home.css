@@ -7,6 +7,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   padding: 90px 20px 0;
+  background-image: url(../images/bg4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body .header .nav a img {
@@ -333,5 +338,96 @@ body .header .nav a img {
   .navigation-auto {
     width: 470px;
     margin-top: 170px;
+  }
+}
+
+/* footer */
+
+.contenedor-redes {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 80px 0 50px 0;
+}
+
+.footer-link {
+  display: flex;
+}
+
+.link {
+  width: 300px;
+  position: relative;
+  top: 0px;
+  left: 1300px;
+}
+
+.link h3 {
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.link a {
+  font-size: 17px;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.link a:hover {
+  color: rgb(76, 146, 211);
+}
+
+.socials {
+  display: flex;
+  margin-bottom: 15px;
+
+}
+
+.socials a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color: #40d3dc;
+  ;
+  margin: 0 15px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.socials a:hover {
+  background-color: #FFFFFF;
+  ;
+}
+
+
+@media (max-width: 1800px) {
+  .link {
+    left: 1000px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .link {
+    left: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .link {
+    left: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .link {
+    top: 300px;
+    left: 100px;
   }
 }
