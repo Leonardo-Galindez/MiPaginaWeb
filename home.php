@@ -22,7 +22,13 @@ if (!isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computex</title>
     <link rel="icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="http://computex.com/assets/css/home.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -51,10 +57,29 @@ if (!isset($_SESSION['usuario'])) {
                 </li>
             </ul>
         </nav>
-
     </header>
 
+    <main>
+        <div class="contenedor_galeria">
+            <div class="slider">
+                <input type="radio" name="slider" id="slideOne" checked>
+                <input type="radio" name="slider" id="slideTwo" checked>
+                <input type="radio" name="slider" id="slideThree" checked>
 
+                <div class="buttons">
+                    <label for="slideOne"></label>
+                    <label for="slideTwo"></label>
+                    <label for="slideThree"></label>
+                </div>
+
+                <div class="content">
+                    <div class="firtslide"></div>
+                    <div class="secondslide"></div>
+                    <div class="thirdslide"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
