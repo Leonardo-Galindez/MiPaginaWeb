@@ -7,7 +7,7 @@ $correo = $_POST['correo'];
 $usuario = $_POST['usuario'];
 $clave = $_POST['clave'];
 
-$clave = hash('sha512',$clave);//Incriptar
+$clave = hash('sha512', $clave);//Incriptar
 
 $queryRegistro = "INSERT INTO usuario(nombreCompleto, correoElectronico, usuario, clave) 
 VALUES('$nombre_completo','$correo','$usuario','$clave')";
